@@ -59,7 +59,7 @@ class RegisterUserController {
       showDialog(
           context: context,
           barrierDismissible: false,
-          child: Center(child: CircularProgressIndicator())
+          builder: (context) => Center(child: CircularProgressIndicator())
       );
       User user = createUser();
       String responseBody = await userWebClient.saveUser(user);

@@ -47,7 +47,7 @@ class LoginController {
       showDialog(
         context: context,
         barrierDismissible: false,
-        child: Center(child: CircularProgressIndicator())
+        builder: (context) => Center(child: CircularProgressIndicator())
       );
       await Future.delayed(Duration(seconds: 15));
       User user = await validateAccess(context);
