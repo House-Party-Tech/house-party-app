@@ -1,16 +1,14 @@
-# house_party
+# House Party App
 
-A new Flutter project.
+## About project
 
-## Getting Started
+This mobile application was developed with the aim of making life easier for users when buying or renting items for parties, whether it be a simple gathering of friends or even a wedding.
+With this application, the user can select the category (type) of the party he is organizing, and choose the products he wants to request delivery to the supplier.
 
-This project is a starting point for a Flutter application.
+## Getting started
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- This application depends on the API developed with Spring Boot to work, the project can be accessed by clicking [here](https://github.com/House-Party-Tech/house-party-api)
+- To perform this project, it is necessary to have [flutter](https://flutter.dev/docs/get-started/install) 2.0 installed on your computer.
+- Run the `flutter pub get` command on your terminal to install the necessary dependencies
+- Run your Android emulator or connect your smartphone to the PC to emulate the app. (More details can be found in Set up your Android device in the flutter [documentation](https://flutter.dev/docs/get-started/install))
+- Run `flutter run` and enjoy the app
