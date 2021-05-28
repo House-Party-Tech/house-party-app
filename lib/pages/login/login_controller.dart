@@ -49,7 +49,6 @@ class LoginController {
         barrierDismissible: false,
         builder: (context) => Center(child: CircularProgressIndicator())
       );
-      await Future.delayed(Duration(seconds: 15));
       User user = await validateAccess(context);
       if (user != null) {
         debugPrint(user.toString());

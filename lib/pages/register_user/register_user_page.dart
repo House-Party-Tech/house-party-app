@@ -72,7 +72,7 @@ class _RegisterUserPageState extends State<RegisterUserPage> {
                       style: TextStyle(color: Colors.white),
                       decoration: InputDecoration(
                         labelText: 'Data de nascimento',
-                        hintText: '25/12/19997',
+                        hintText: '25/12/1997',
                       ),
                       controller: this._registerController.dateOfBirthController,
                       keyboardType: TextInputType.number,

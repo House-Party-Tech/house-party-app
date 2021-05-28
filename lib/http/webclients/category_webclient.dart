@@ -6,9 +6,15 @@ import 'package:http/http.dart';
 
 class CategoryWebClient {
 
-  Future<List<Category>> findAll() async {
-    final Response response = await client.get('$url/categoria').timeout(Duration(seconds: 30));
+  String categoryEndpoint = 'categoria';
 
+  Future<List<Category>> findAll() async {
+    final Response response = await client.get(
+      Uri.http(
+        urlBase.authority,
+        categoryEndpoint
+      ),
+    ).timeout(Duration(seconds: 30));
     final List<dynamic> responseJson = jsonDecode(utf8.decode(response.bodyBytes));
     return responseJson.map((json) => Category.fromJson(json)).toList();
   }

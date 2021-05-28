@@ -3,6 +3,10 @@ import 'package:http/http.dart';
 import 'package:http_interceptor/http_client_with_interceptor.dart';
 
 //URL das requisições
-const String url = 'http://192.168.1.108:8080';
+final Uri urlBase = Uri(
+  scheme: 'http',
+  host: '192.168.0.102', // Altere esta String com o IP da máquina onde a API está sendo executada
+  port: 8680
+);
 
 final Client client = HttpClientWithInterceptor.build(interceptors: [LoggingInterceptor()]);
